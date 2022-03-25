@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS style -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bruh Cinema</title>
+  </head>
+  <body class="main">
+    <div class="layout">
+      <div id="b-header">
+        <header>
+          <div id="logo">
+            <a href="#"></a>
+          </div>
+
+          <div id="primary" class="nav-panel">
+            <ul class="sections">
+              <li><a href="#section-1">Главная</a></li>
+              <li><a href="#section-2">Личный кабинет</a></li>
+              <li><a href="buy.html">Купить</a></li>
+            </ul>
+          </div>
+
+          <div id="b-user" class="main-nav">
+            <div class="account">
+              <a class="cd-signup" href="#0">Вход</a>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <div id="slideshow-wrapper" class="active">
+        <h1 class="centered">Заголовок</h1>
+        <section id="slideshow">
+          <div class="slide-wrap"></div>
+        </section>
+      </div>
+
+      <footer>
+        <section id="footer">
+          <div class="first">
+            <h4>About</h4>
+            <a href="">Text1</a>
+          </div>
+          <div class="latest">
+            <h4>Partners</h4>
+            <ul>
+              <li><a href="#">text</a></li>
+              <li><a href="#">text</a></li>
+              <li><a href="#">text</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <h4>Connect with Us</h4>
+            <ul>
+              <li><a href="#">text</a></li>
+              <li><a href="#">text</a></li>
+              <li><a href="#">text</a></li>
+              <li><a href="#">text</a></li>
+            </ul>
+          </div>
+
+          <div class="copyright">
+            "Copyright © 2022"
+            <a href="#">text</a>
+          </div>
+        </section>
+      </footer>
+
+      <div class="cd-user-modal">
+        <!-- все формы на фоне затемнения-->
+        <div class="cd-user-modal-container">
+          <!-- основной контейнер -->
+          <ul class="cd-switcher">
+            <li><a href="#0">Вход</a></li>
+            <li><a href="#0">Регистрация</a></li>
+          </ul>
+
+          <div id="cd-login">
+            <!-- форма входа -->
+            <form class="cd-form">
+              <p class="fieldset">
+                <label class="image-replace cd-email" for="signin-email"
+                  >E-mail</label
+                >
+                <input
+                  class="full-width has-padding has-border"
+                  id="signin-email"
+                  type="email"
+                  placeholder="E-mail"
+                />
+                <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+              </p>
+
+              <p class="fieldset">
+                <label class="image-replace cd-password" for="signin-password"
+                  >Пароль</label
+                >
+                <input
+                  class="full-width has-padding has-border"
+                  id="signin-password"
+                  type="text"
+                  placeholder="Пароль"
+                />
+                <a href="#0" class="hide-password">Скрыть</a>
+                <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+              </p>
+
+              <p class="fieldset">
+                <input type="checkbox" id="remember-me" checked />
+                <label for="remember-me">Запомнить меня</label>
+              </p>
+
+              <p class="fieldset">
+                <input class="full-width" type="submit" value="Войти" />
+              </p>
+            </form>
+
+            <p class="cd-form-bottom-message">
+              <a href="#0">Забыли свой пароль?</a>
+            </p>
+            <!-- <a href="#0" class="cd-close-form">Close</a> -->
+          </div>
+          <!-- cd-login -->
+
+          <div id="cd-signup">
+            <!-- форма регистрации -->
+            <form class="cd-form" method="POST" action="index.php">
+              <p class="fieldset">
+                <label class="image-replace cd-username" for="signup-username"
+                  >Имя пользователя</label
+                >
+                <input
+                  class="full-width has-padding has-border"
+                  id="signup-username"
+                  type="text"
+                  placeholder="Имя пользователя"
+                />
+                <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+              </p>
+
+              <p class="fieldset">
+                <label class="image-replace cd-email" for="signup-email"
+                  >E-mail</label
+                >
+                <input
+                  class="full-width has-padding has-border"
+                  id="signup-email"
+                  type="email"
+                  placeholder="E-mail"
+                />
+                <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+              </p>
+
+              <p class="fieldset">
+                <label class="image-replace cd-password" for="signup-password"
+                  >Пароль</label
+                >
+                <input
+                  class="full-width has-padding has-border"
+                  id="signup-password"
+                  type="text"
+                  placeholder="Пароль"
+                />
+                <a href="#0" class="hide-password">Скрыть</a>
+                <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+              </p>
+
+              <p class="fieldset">
+                <input type="checkbox" id="accept-terms" />
+                <label for="accept-terms"
+                  >Я согласен с <a href="#0">Условиями</a></label
+                >
+              </p>
+
+              <p class="fieldset">
+                <input
+                  class="full-width has-padding"
+                  type="submit"
+                  value="Создать аккаунт"
+                />
+              </p>
+            </form>
+          </div>
+
+          <div id="cd-reset-password">
+            <!-- форма восстановления пароля -->
+            <p class="cd-form-message">
+              Забыли пароль? Пожалуйста, введите адрес своей электронной почты.
+              Вы получите ссылку, чтобы создать новый пароль.
+            </p>
+
+            <form class="cd-form">
+              <p class="fieldset">
+                <label class="image-replace cd-email" for="reset-email"
+                  >E-mail</label
+                >
+                <input
+                  class="full-width has-padding has-border"
+                  id="reset-email"
+                  type="email"
+                  placeholder="E-mail"
+                />
+                <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+              </p>
+
+              <p class="fieldset">
+                <input
+                  class="full-width has-padding"
+                  type="submit"
+                  value="Восстановить пароль"
+                />
+              </p>
+            </form>
+
+            <p class="cd-form-bottom-message">
+              <a href="#0">Вернуться к входу</a>
+            </p>
+          </div>
+          <!-- cd-reset-password -->
+          <a href="#0" class="cd-close-form">Закрыть</a>
+        </div>
+        <!-- cd-user-modal-container -->
+      </div>
+      <!-- cd-user-modal -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/main.js"></script>
+      <!-- Gem jQuery -->
+    </div>
+  </body>
+</html>
